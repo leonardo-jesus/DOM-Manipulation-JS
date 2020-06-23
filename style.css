@@ -1,0 +1,28 @@
+body {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+@keyframes circle {
+  from {
+    transform: scale(1)
+  }
+  to {
+    transform: scale(1.4)
+  }
+}
+
+#circle {
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-end;
+  width: 200px;
+  height: 200px;
+  transform: scale(2);
+  border-radius: 100%;
+  background-color: rgba(0, 0, 0, .5);
+  margin: 10px;
+  animation: circle 1s forwards;
+}
